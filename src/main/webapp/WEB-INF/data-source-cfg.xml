@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+    <bean id="myDataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://ec2-79-125-110-209.eu-west-1.compute.amazonaws.com:5432/deaj2u51cs8dqj?sslmode=require" />
+        <property name="username" value="akujisgpxwyggw" />
+        <property name="password" value="d6895c6799f4f2f5ceacede3bcd6f5dc9e1ead345359be0b31b0a34076dfae50" />
+    </bean>
+    <bean id="mySessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="myDataSource" />
+ 
+        <property name="annotatedClasses">
+            <list>
+                <value>com.namph.entity.Unit</value>
+                <value>com.namph.entity.MyUser</value>
+                <value>com.namph.entity.Roles</value>
+                <value>com.namph.entity.Product</value>
+                <value>com.namph.entity.GroupProduct</value>
+                <value>com.namph.entity.Customer</value>
+                <value>com.namph.entity.Import</value>
+                <value>com.namph.entity.ImportDetail</value>
+                <value>com.namph.entity.Export</value>
+                <value>com.namph.entity.ExportDetail</value>
+                <value>com.namph.entity.Money</value>
+                <value>com.namph.entity.Menu</value>
+                <value>com.namph.entity.MenuAction</value>
+            </list>
+        </property>
+ 
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">com.namph.utils.MyPostgreSQL82Dialect</prop>
+                <prop key="hibernate.globally_quoted_identifiers">true</prop>
+                <!--<property name="hibernate.globally_quoted_identifiers" value="true"/>-->
+<!--                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>-->
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.connection.CharSet">utf8</prop>
+                <prop key="hibernate.connection.characterEncoding">utf8</prop>
+                <prop key="hibernate.connection.useUnicode">true</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
