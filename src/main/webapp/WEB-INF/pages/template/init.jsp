@@ -16,34 +16,31 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/AdminLTE.min.css"/>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/skins/_all-skins.min.css">
     <link  type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css">-->
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/daterangepicker.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/bootstrap-datepicker.min.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/bootstrap3-wysihtml5.min.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/jquery-jvectormap.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/jquery.growl.css">
-    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/notification.css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
-    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.css" rel="stylesheet" />-->
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/iCheck/all.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/dual_listbox/bootstrap-duallistbox.css">
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/daterangepicker.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/bootstrap-datepicker.min.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/bootstrap3-wysihtml5.min.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/adminLte/css/jquery-jvectormap.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/jquery.growl.css">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/iCheck/all.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/dual_listbox/bootstrap-duallistbox.css">-->
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
-    <!--<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css"/>-->
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/my_style.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/autocomplete/easy-autocomplete.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/autocomplete/easy-autocomplete.themes.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/tree/hummingbird-treeview.css">
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/autocomplete/easy-autocomplete.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/autocomplete/easy-autocomplete.themes.css">-->
+    <!--<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/tree/hummingbird-treeview.css">-->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>-->
     <script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/adminLte/js/adminlte.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/adminLte/js/pages/dashboard.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/adminLte/js/demo.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/js/jquery.growl.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/adminLte/js/jquery.slimscroll.min.js"></script>
+    <!--<script src="${pageContext.request.contextPath}/resources/adminLte/js/pages/dashboard.js"></script>-->
+    <!--<script src="${pageContext.request.contextPath}/resources/adminLte/js/demo.js"></script>-->
+    <!--<script src="${pageContext.request.contextPath}/resources/js/jquery.growl.js"></script>-->
+<!--    <script src="${pageContext.request.contextPath}/resources/adminLte/js/jquery.slimscroll.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/adminLte/js/jquery.sparkline.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/adminLte/js/jquery-jvectormap-1.2.2.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/adminLte/js/jquery-jvectormap-world-mill-en.js"></script>
@@ -56,13 +53,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.full.min.js"></script>-->
     <script src="${pageContext.request.contextPath}/resources/iCheck/icheck.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/autocomplete/jquery.easy-autocomplete.js"></script>
     <script src="${pageContext.request.contextPath}/resources/dual_listbox/jquery.bootstrap-duallistbox.js"></script>
     <script src="${pageContext.request.contextPath}/resources/tree/hummingbird-treeview.js"></script>
-    <script type="text/javascript" src="http://cdn.peerjs.com/0/peer.js"></script>
-    <!--<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
+    <script type="text/javascript" src="http://cdn.peerjs.com/0/peer.js"></script>-->
     <style>
         label.required::after {
             content: '(*)';
